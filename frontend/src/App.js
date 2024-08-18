@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <div>
-      <h1 className=' font-serif font-bold text-red-400 text-3xl'>Hello from fahim</h1>
+      <HomePage />
     </div>
   );
 }
