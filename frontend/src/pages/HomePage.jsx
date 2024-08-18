@@ -19,7 +19,7 @@ const HomePage = () => {
       try {
         const data = await fetchCardsData();
         setCardsData(data);
-        setFilteredCards(data); // Initialize filtered cards with all cards
+        setFilteredCards(data); 
       } catch (error) {
         setError(error.message);
       } finally {
@@ -43,8 +43,7 @@ const HomePage = () => {
     try {
       setLoading(true);
       const card = await fetchCardByTitle(id);
-      console.log('Card Details:', card); // You can display these details as needed
-      // Here you could set the state to show the card details, redirect, or any other logic
+      console.log('Card Details:', card); 
     } catch (error) {
       setError(error.message);
     } finally {
